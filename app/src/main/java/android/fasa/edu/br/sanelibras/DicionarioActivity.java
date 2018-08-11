@@ -21,11 +21,14 @@ public class DicionarioActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dicionario);
+        setContentView(R.layout.activity_dic_personalizado);
 
-        listaDicionario = findViewById(R.id.lista_dicionario);
+        listaDicionario = (ListView) findViewById(R.id.list_dict_person);
         sinais = new ArrayList<Sinal>();
-        sinais.add(new Sinal());
+        sinais.add(new Sinal("Letra A", R.mipmap.iconlivros));
+        sinais.add(new Sinal("Letra B", R.mipmap.iconlivros));
+        sinais.add(new Sinal("Letra C", R.mipmap.iconlivros));
+
         listaDicionario.setAdapter(new BasicAdapter(this, sinais));
         listaDicionario.setOnItemClickListener(this);
     }
