@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">sanelibras</string>
     <string name="splashText">Sanelibras</string>
+    <string name="dicionario">Dicionário Libras</string>
 </resources>
