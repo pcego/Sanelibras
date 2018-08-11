@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 // Splash Actvity Sanelibras
 public class SplashActivity extends AppCompatActivity {
@@ -35,5 +36,11 @@ public class SplashActivity extends AppCompatActivity {
             }
         }, 2000);
 
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish();
     }
 }
